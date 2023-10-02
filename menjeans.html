@@ -1,0 +1,610 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Men Jeans</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<!-- Font Awesome Icons -->	
+<script src="https://kit.fontawesome.com/f5c0ff2767.js" crossorigin="anonymous"></script>
+<!-- Navbar -->	
+<script src="nav.js" defer></script>
+<!-- Login -->	
+<script src="login.js" defer></script>
+<!-- Slick -->	
+<link href="slick.css" rel="stylesheet" type="text/css">
+
+</head>
+
+	
+	
+<body>
+<!-- Login Form-->			
+<div class="login-form" id="Login">
+	<div class="toggle">
+	<i class="fa-solid fa-pen tooltip"></i>
+	</div>
+	
+	<form action="#" method="post" class="form-login">
+	<h4>LOGIN TO YOUR ACCOUNT</h4>
+    <label for="uname"></label>
+    <input type="text" placeholder="Username" name="uname" required id="uname">
+    <label for="psw"></label>
+    <input type="password" placeholder="Password" name="psw" required id="psw"> 
+    <button type="submit">LOGIN</button>
+    <label>
+    </label>
+	</form>
+	
+	<form action="#" method="post" class="form-create-account">
+	<h4>CREATE AN ACCOUNT</h4>
+    <label for="cuname"></label>
+    <input type="text" placeholder="Username" name="uname" required id="cuname">
+    <label for="cpsw"></label>
+    <input type="password" placeholder="Password" name="psw" required id="cpsw">
+	<label for="cemail"></label>
+	<input type="text" placeholder="Email Address" name="eml" required id="cemail">
+	<label for="cphone"></label>
+	<input type="text" placeholder="Phone Number" name="phone" required id="cphone">
+    <button type="submit">REGISTER</button>
+	</form>
+
+	<div class="no-login">
+   	<button type="button" onClick="closeLogin()">CONTINUE AS GUEST</button>
+  	</div>
+  	  <div class="psw">
+		<p>Forgot your password?</p>
+	</div>
+</div>		
+	
+	
+	
+<div class="show">
+
+<!-- Header -->	
+	<header class="header">
+		
+ <!-- Login Bar -->	   
+	<div class="login-bar">
+		<h1 class="logo"><a href="index.html">LOREM'S FASHION</a></h1>	<div class="login-icons" aria-controls="show-login"  onClick="openLogin()">
+		<i class="fa-solid fa-heart"></i>
+		<p>LOGIN</p>
+		<i class="fa-solid fa-circle-user"></i>
+		</div>	
+	</div>	
+	
+		
+ <!-- Navigation Bar -->	  		
+		
+	<div class="white-navigation">		
+  
+      <img src="images/menu-open.png" alt="" aria-controls="show-menu"  onClick="openMenu()" id="open-menu">
+		
+   <nav>
+	 
+      <div id="primary-nav" class="primary-nav" data-visible="false">
+		<ul class="scroll">
+        <li class="home-menu"><a href="index.html">HOME</a>
+		</li>	  
+        <li class="dropdown">
+		<a href="women.html" data-toggle="dropdown">WOMEN<i class="fa-solid fa-angle-down icon-arrow"></i></a>	  	
+		  <ul class="dropdown-menu">
+			  <li><a href="womentops.html">TOPS</a></li>
+			  <li><a href="womenjeans.html">JEANS</a></li>
+			  <li><a href="womendresses.html">DRESSES</a></li>
+			  <li><a href="womenjackets.html">JACKETS</a></li>
+		  </ul> 				
+		</li>
+        <li class="dropdown">		<a href="men.html" data-toggle="dropdown">MEN<i class="fa-solid fa-angle-down icon-arrow"></i></a>  	
+		  <ul class="dropdown-menu">
+			  <li><a href="mentops.html">TOPS</a></li>
+			  <li><a href="menjeans.html">JEANS</a></li>
+			  <li><a href="mensweaters.html">SWEATERS</a></li>
+			  <li><a href="menjackets.html">JACKETS</a></li>
+		  </ul> 				
+		</li>		  
+        <li class="dropdown">
+		<a href="sales.html" data-toggle="dropdown">SALES<i class="fa-solid fa-angle-down icon-arrow"></i></a>	
+		  <ul class="dropdown-menu">
+			  <li><a href="saleswomen.html">WOMEN</a></li>
+			  <li><a href="salesmen.html">MEN</a></li>
+		  </ul> 				
+		</li>
+        <li class="dropdown">
+		<a href="newarrivalswomen.html" data-toggle="dropdown">NEW ARRIVALS<i class="fa-solid fa-angle-down icon-arrow"></i></a>	  	
+		  <ul class="dropdown-menu">
+			  <li><a href="newarrivalswomen.html">WOMEN</a></li>
+			  <li><a href="newarrivalsmen.html">MEN</a></li>
+		  </ul> 				
+		</li>
+		<li class="dropdown">
+		<a href="bestsellers.html" data-toggle="dropdown">BEST SELLERS<i class="fa-solid fa-angle-down icon-arrow"></i></a>	  	
+		  <ul class="dropdown-menu">
+			  <li><a href="bestsellerswomen.html">WOMEN</a></li>
+			  <li><a href="bestsellersmen.html">MEN</a></li>
+		  </ul> 				
+		</li>
+		<li class="dropdown">
+		<a href="ourchoice.html" data-toggle="dropdown">OUR CHOICE<i class="fa-solid fa-angle-down icon-arrow"></i></a>	  	
+		  <ul class="dropdown-menu">
+			  <li><a href="ourchoicewomen.html">WOMEN</a></li>
+			  <li><a href="ourchoicemen.html">MEN</a></li>
+		  </ul> 				</li>
+      <img src="images/menu-close.png" alt="" onClick="closeMenu()" class="close-menu">
+      </ul>
+	  </div>
+	</nav>
+		
+
+	<div class="search-bar">
+		<input type="text" placeholder="Search" id="search-bar" data-visible="false">
+		<img src="images/glass.png" alt="">	
+	</div>
+		
+	<a href="cart.html" class="cart"><img src="images/shopping-cart-05.png" alt="" class="cart"></a></div>
+		
+		
+  </header>	
+	
+
+	<!-- Sub-Header -->			
+<div class="sub-header"><div class="slides">
+			<div class="slide"><a href="index.html">HOME</a></div>
+			<div class="slide"><a href="women.html">WOMEN</a></div>
+			<div class="slide"><a href="men.html">MEN</a></div>
+			<div class="slide"><a href="sales.html">SALES</a></div>
+			<div class="slide"><a href="newarrivals.html">NEW ARRIVALS</a></div>
+			<div class="slide"><a href="bestsellers.html">BEST SELLERS</a></div>
+			<div class="slide"><a href="ourchoice.html">OUR CHOICE</a></div>
+		</div>
+</div>
+	
+
+<main>
+	
+<!-- Page Title -->	
+<div class="page-title-filters">
+	<h4><a href="men.html">MEN</a> <i class="fa-solid fa-angle-right" id="rightarrow"></i> <a href="menjeans.html">JEANS</a></h4>
+
+	<div class="page-filters" aria-controls="show-filters" onClick="openfilters()">	
+	<h4>FILTERS</h4>
+	<i class="fa-solid fa-filter" aria-controls="show-filters"  onClick="openfilters()"></i>
+	
+	</div>
+	
+
+	<div id="show-filters" class="show-filters">
+		<ul class="scroll">			
+			
+			<li class="dropdown">
+			<a href="#" data-toggle="dropdown">SORT BY<i class="fa-solid fa-angle-down icon-arrow"></i></a>
+			<ul class="dropdown-menu container">
+				<li>
+					<label class="container">PRICE UP	
+  					<input type="radio" name="sort">
+					<span class="checkmark"></span>
+					</label>
+      			</li>
+				<li>
+					<label class="container">PRICE DOWN
+					<input type="radio" name="sort">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">LATEST
+					<input type="radio" name="sort">
+					<span class="checkmark"></span>
+				</label>
+				</li>
+				<li>
+					<label class="container">IMPLICIT
+					<input type="radio" name="sort">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+			</ul>
+			</li>
+			<li class="dropdown">
+			<a href="#" data-toggle="dropdown">SIZE<i class="fa-solid fa-angle-down icon-arrow"></i></a>
+			<ul class="dropdown-menu container">
+				<li>
+					<label class="container">XS	
+  					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+      			</li>
+				<li>
+					<label class="container">S
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">M
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				</li>
+				<li>
+					<label class="container">L
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">XL
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">XXL
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+			</ul>
+			</li>
+			<li class="dropdown">
+			<a href="#" data-toggle="dropdown">STYLE<i class="fa-solid fa-angle-down icon-arrow"></i></a>
+			<ul class="dropdown-menu container">
+				<li>
+					<label class="container">COLLAR	
+  					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+      			</li>
+				<li>
+					<label class="container">LONG
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">FLOWER PRINT
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				</li>
+				<li>
+					<label class="container">UNI COLOR
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">LONG SLEEVES
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">CROPPED
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+			</ul>
+			</li>
+			<li class="dropdown">
+			<a href="#" data-toggle="dropdown">FABRIC<i class="fa-solid fa-angle-down icon-arrow"></i></a>
+			<ul class="dropdown-menu container">
+				<li>
+					<label class="container">CASHMERE	
+  					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+      			</li>
+				<li>
+					<label class="container">COTTON
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">POLYESTER
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				</li>
+				<li>
+					<label class="container">LEATHER
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+			</ul>
+			</li>
+			<li class="dropdown">
+			<a href="#" data-toggle="dropdown">COLOR<i class="fa-solid fa-angle-down icon-arrow"></i></a>
+			<ul class="dropdown-menu container">
+				<li>
+					<label class="container">BLACK	
+  					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+      			</li>
+				<li>
+					<label class="container">WHITE
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">RED
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				</li>
+				<li>
+					<label class="container">PINK
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">BLUE
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+				<li>
+					<label class="container">BROWN
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					</label>
+				</li>
+			</ul>
+			</li>
+			<button class="button">APPLY FILTERS</button>
+			<img src="images/menu-close.png" alt="" onClick="closefilters()" class="close-filters">
+		</ul>
+		
+		
+	</div>
+</div>	
+	
+	
+	
+<!-- Categories Slider -->	
+<div class="categories-slider">
+
+	<h4>TOPS</h4>
+	<h4>JEANS</h4>
+	<h4>POLOS</h4>
+	<h4>JACKETS</h4>
+	<h4>SWEATERS</h4>
+	<h4>SPORTSWEAR</h4>
+	<h4>FORMAL WEAR</h4>
+	<h4>WINTER STYLE</h4>
+	<h4>NYE</h4>
+	<h4>SPRING STYLE</h4>
+	<h4>ON SALE</h4>
+	<h4>BAGS</h4>
+</div>
+
+<!-- Products -->		
+<div class="products">
+	<div class="product">
+	<img src="images/men/1.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/2.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/4.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/5.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/6.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/7.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/8.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/9.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/13.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/16.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/17.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+	<div class="product">
+	<img src="images/men/18.jpg" alt="" onClick="myFunction()">
+	<ul class="colors">
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+		<li class="color-item"></li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed </p>
+	<p class="price">123$</p>
+	</div>
+</div>
+
+	
+
+
+	
+</main>
+	
+<!-- Footer -->		
+<footer>
+<!--	<h4>MENU</h4>-->
+	
+	<ul>
+        <li class="home-menu"><a href="index.html">HOME</a>
+		</li>	  
+        <li class="dropdown">
+		<a href="women.html" data-toggle="dropdown">WOMEN<i class="fa-solid fa-angle-down icon-arrow"></i></a>	  	
+		  <ul class="dropdown-menu">
+			  <li><a href="womentops.html">TOPS</a></li>
+			  <li><a href="womenjeans.html">JEANS</a></li>
+			  <li><a href="womendresses.html">DRESSES</a></li>
+			  <li><a href="womenjackets.html">JACKETS</a></li>
+		  </ul> 				
+		</li>
+        <li class="dropdown">		<a href="men.html" data-toggle="dropdown">MEN<i class="fa-solid fa-angle-down icon-arrow"></i></a>  	
+		  <ul class="dropdown-menu">
+			  <li><a href="mentops.html">TOPS</a></li>
+			  <li><a href="menjeans.html">JEANS</a></li>
+			  <li><a href="mensweaters.html">SWEATERS</a></li>
+			  <li><a href="menjackets.html">JACKETS</a></li>
+		  </ul> 				
+		</li>		  
+        <li class="dropdown">
+		<a href="sales.html" data-toggle="dropdown">SALES<i class="fa-solid fa-angle-down icon-arrow"></i></a>	
+		  <ul class="dropdown-menu">
+			  <li><a href="saleswomen.html">WOMEN</a></li>
+			  <li><a href="salesmen.html">MEN</a></li>
+		  </ul> 				
+		</li>
+        <li class="dropdown">
+		<a href="newarrivalswomen.html" data-toggle="dropdown">NEW ARRIVALS<i class="fa-solid fa-angle-down icon-arrow"></i></a>	  	
+		  <ul class="dropdown-menu">
+			  <li><a href="newarrivalswomen.html">WOMEN</a></li>
+			  <li><a href="newarrivalsmen.html">MEN</a></li>
+		  </ul> 				
+		</li>
+		<li class="dropdown">
+		<a href="bestsellers.html" data-toggle="dropdown">BEST SELLERS<i class="fa-solid fa-angle-down icon-arrow"></i></a>	  	
+		  <ul class="dropdown-menu">
+			  <li><a href="bestsellerswomen.html">WOMEN</a></li>
+			  <li><a href="bestsellersmen.html">MEN</a></li>
+		  </ul> 				
+		</li>
+		<li class="dropdown">
+		<a href="ourchoice.html" data-toggle="dropdown">OUR CHOICE<i class="fa-solid fa-angle-down icon-arrow"></i></a>	  	
+		  <ul class="dropdown-menu">
+			  <li><a href="ourchoicewomen.html">WOMEN</a></li>
+			  <li><a href="ourchoicemen.html">MEN</a></li>
+		  </ul> 								 
+		</li>
+      </ul>
+	
+	
+	<div class="newsletter">
+		<h4>NEWSLETTER</h4>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<form><input type="text" name="LOREM" placeholder="Lorem ipsum" required></form>
+		<button class="button">SUBSCRIBE</button>
+	</div>
+	
+	<div class="social">
+		<i class="fa-brands fa-instagram"></i>
+		<i class="fa-brands fa-facebook-f"></i>
+		<i class="fa-brands fa-pinterest"></i>
+	</div>
+	
+	
+</footer>
+	
+<div class="copyright">
+	<p>COPYRIGHT LOREM'S FASHION</p>
+</div>
+	
+</div>	
+	
+	
+
+	
+<!-- Slick -->		
+<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick.min.js"></script>
+<script type="text/javascript" src="slick.js"></script>	
+	
+	
+	
+	
+<!-- Category -->
+<script type="text/javascript" src="category.js"></script>
+	
+</body>
+</html>
